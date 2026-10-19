@@ -30,7 +30,13 @@ jobs:
           "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "platforms;android-35" "build-tools;35.0.0" > /dev/null
 
       - name: Build debug APK
-        run: gradle :app:assembleDebug --no-daemon --stacktrace
+        run: |
+          set -o pipefail
+          if ! gradle :app:assembleDebug --no-daemon --stacktrace 2>&1 | tee build.log; then
+            msg=$(grep -E "^e: |^w: .*MainActivity|error:|FAILED|What went wrong|Caused by|Could not|not found|Execution failed|^> " -A2 build.log | head -60 | sed ':a;N;$!ba;s/%/%25/g;s/\r//g;s/\n/%0A/g')
+            echo "::error title=GradleFailure::${msg}"
+            exit 1
+          fi
 
       - name: Check language data is inside the APK
         run: |
