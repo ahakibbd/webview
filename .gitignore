@@ -1,0 +1,11 @@
+*.iml
+.gradle/
+/local.properties
+/.idea/
+.DS_Store
+build/
+/captures
+.externalNativeBuild
+.cxx
+# ভাষার ডাটা বিল্ডের সময় নামে, গিটে রাখার দরকার নেই
+app/src/main/assets/tessdata/

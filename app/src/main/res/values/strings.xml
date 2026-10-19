@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">অফলাইন স্ক্যানার</string>
+    <string name="title">অফলাইন স্ক্যানার</string>
+    <string name="langs_heading">ভাষা বাছাই করুন</string>
+    <string name="lang_ben">বাংলা</string>
+    <string name="lang_eng">English</string>
+    <string name="lang_ara">العربية</string>
+    <string name="btn_camera">📷 ক্যামেরা</string>
+    <string name="btn_gallery">🖼 গ্যালারি</string>
+    <string name="enhance">ছবি সাদাকালো ও স্পষ্ট করে পড়ুন</string>
+    <string name="result_heading">পাওয়া লেখা</string>
+    <string name="result_hint">স্ক্যান করা লেখা এখানে আসবে। এখানে সম্পাদনাও করা যাবে।</string>
+    <string name="btn_copy">কপি</string>
+    <string name="btn_share">শেয়ার</string>
+    <string name="btn_clear">মুছুন</string>
+
+    <string name="status_ready">ছবি তুলুন বা গ্যালারি থেকে বাছুন।</string>
+    <string name="status_working">লেখা পড়া হচ্ছে… একটু অপেক্ষা করুন।</string>
+    <string name="status_done">স্ক্যান শেষ।</string>
+    <string name="status_empty">কোনো লেখা পাওয়া যায়নি। ভাষা ঠিক আছে কি দেখুন, আলো বাড়িয়ে আবার তুলুন।</string>
+    <string name="status_copied">কপি হয়েছে।</string>
+    <string name="err_no_lang">অন্তত একটি ভাষা বাছাই করুন।</string>
+    <string name="err_missing_lang">ভাষার ফাইল APK-তে নেই: %1$s। README দেখে প্রজেক্ট আবার বিল্ড করুন।</string>
+    <string name="err_init">OCR ইঞ্জিন চালু করা যায়নি।</string>
+    <string name="err_generic">সমস্যা হয়েছে: %1$s</string>
+    <string name="share_chooser">লেখা শেয়ার করুন</string>
+</resources>
